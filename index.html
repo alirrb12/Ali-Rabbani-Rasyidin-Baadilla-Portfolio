@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ali Rabbani Rasyidin Baadilla Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #1e3a8a;
+      --bg: #f9fafb;
+      --text: #1f2937;
+      --card: #ffffff;
+    }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    header {
+      background: var(--primary);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    }
+    header h1 {
+      font-size: 2.75rem;
+      font-weight: 700;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+      max-width: 960px;
+      margin: auto;
+    }
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+    .section-title::after {
+      content: '';
+      width: 60px;
+      height: 4px;
+      background: var(--primary);
+      display: block;
+      margin: 0.5rem auto 0;
+      border-radius: 2px;
+    }
+    .card {
+      background: var(--card);
+      border-radius: 1.25rem;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 15px 25px rgba(0, 0, 0, 0.05);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px rgba(0, 0, 0, 0.08);
+    }
+    .card h2 {
+      margin-bottom: 0.75rem;
+      color: var(--primary);
+    }
+    .card p {
+      margin-bottom: 0.75rem;
+    }
+    .card img {
+      margin-top: 1rem;
+    }
+    .project-photo {
+      max-width: 400px; /* resized from 500px */
+      width: 100%;
+      border-radius: 1rem;
+      display: block;
+      margin: 1rem auto 0;
+    }
+    .caption {
+      text-align: center;
+      font-size: 0.95rem;
+      color: #4b5563;
+      margin-top: 0.25rem;
+    }
+    .btn-group {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .btn-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.75rem 1.5rem;
+      background: var(--primary);
+      color: white;
+      border-radius: 999px;
+      margin: 0.5rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.3s ease;
+    }
+    .btn-icon:hover {
+      background: #1d4ed8;
+    }
+    .btn-icon img {
+      width: 20px;
+      height: 20px;
+      margin-right: 8px;
+    }
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      justify-content: center;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .card h2 {
+      text-align: center;
+    }
+    .skills span {
+      background: #e5e7eb;
+      padding: 0.5rem 1rem;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      transition: background 0.3s ease;
+    }
+    .skills span:hover {
+      background: var(--primary);
+      color: white;
+    }
+    footer {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 3rem;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ali Rabbani Rasyidin Baadilla</h1>
+    <p>2nd Year Electronics and Instrumentation Student @ UGM • Web Developer • CMS Contributor</p>
+  </header>
+
+  <div class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+      <p>Hello! I’m Ali, an Electronics & Instrumentation student passionate about building digital products, contributing to web infrastructure, and guiding students in hands-on lab practices. I blend engineering logic with design for maximum impact.</p>
+      <img src="myphoto.jpeg" alt="Personal photo of Ali Baadilla" class="project-photo">
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Highlighted Projects</h2>
+
+    <div class="card">
+      <h2><a href="https://erc.elins.id/projects/" target="_blank">ERC Website Content Management</a></h2>
+      <p>Managed content publishing for ERC Website as part of the Website Development Division. Uploaded projects like Aeroponics Dashboard and Web Inklusi, supported CMS, integrated real-time dashboards, and organized documentation flow.</p>
+      <p><strong>Tools:</strong> WordPress, Elementor, Media Tools</p>
+      <img src="ercteam.jpeg" alt="Website Development Team for ERC 2025" class="project-photo">
+      <p class="caption">Website Development Team for ERC 2025</p>
+    </div>
+
+    <div class="card">
+      <h2>G-Connect – Early Warning System</h2>
+      <p>Back-End Developer for real-time flood and landslide early warning platform. Worked with UGM’s tech team to build robust APIs, connect MongoDB, and deliver stable backend services for the system.</p>
+      <p><strong>Tools:</strong> Node.js, MongoDB, Express</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Experiences</h2>
+
+    <div class="card">
+      <h2>Laboratory Assistant – Electronics Workshop</h2>
+      <p>Provided schematic guidance and fabrication support to 1st-year students in the PCB design practicum using Autodesk EAGLE.</p>
+      <p><strong>Focus:</strong> PCB Design, EAGLE, Circuit Mentorship</p>
+      <img src="labassisting.jpeg" alt="Assisting Students in the making of PCB Schematic using Autodesk EAGLE" class="project-photo">
+      <p class="caption">Assisting 1st year Students in the making of PCB Schematic using Autodesk EAGLE</p>
+    </div>
+
+    <div class="card">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>Back-End Web Development</span>
+        <span>Back-end Operations</span>
+        <span>Database Testing</span>
+        <span>Backend</span>
+        <span>User Authentication</span>
+        <span>Communication</span>
+        <span>Critical Thinking</span>
+        <span>Teamwork</span>
+        <span>Leadership</span>
+        <span>Autodesk EAGLE</span>
+        <span>PCB Design</span>
+        <span>PCB Assembly</span>
+        <span>Circuit Testing</span>
+        <span>Circuit Analysis</span>
+        <span>Web Development</span>
+        <span>Python</span>
+        <span>JavaScript</span>
+        <span>Microsoft Office</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2 class="section-title">Contact Me</h2>
+    <div class="btn-group">
+      <a class="btn-icon" href="mailto:rasyidinbaadilla@gmail.com">
+        <img src="gmail.png" alt="Gmail Icon"> Gmail
+      </a>
+      <a class="btn-icon" href="https://www.linkedin.com/in/alirabbanirasyidinbaadilla" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn Icon"> LinkedIn
+      </a>
+      <a class="btn-icon" href="https://www.instagram.com/alirrb3" target="_blank">
+        <img src="instagram.png" alt="Instagram Icon"> Instagram
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Ali Baadilla – All rights reserved</p>
+  </footer>
+
+</body>
+</html>
